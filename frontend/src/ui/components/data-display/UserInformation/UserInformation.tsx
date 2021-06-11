@@ -14,14 +14,19 @@ interface UserInformationProps {
   description?: string;
 }
 
-const UserInformation = () => {
+const UserInformation: React.FC<UserInformationProps> = ({
+  picture,
+  name,
+  rating,
+  description,
+}) => {
   return (
     <div>
       <UserInformationContainer>
-        <AvatarStyled src={'https://github.com/vandodev.png'}/>
-        <UserName>Evandro</UserName>
-        <RatingStyled readOnly value={3}/>
-        <UserDescription>Morro Agudo</UserDescription>
+        <AvatarStyled src={picture}>{name[0]}</AvatarStyled>
+        <UserName>{name}</UserName>
+        <RatingStyled readOnly value={rating}/>
+        <UserDescription>{description}</UserDescription>
       </UserInformationContainer>
     </div>
   );

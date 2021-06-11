@@ -12,7 +12,12 @@ export default function Home() {
        subtitle={'Preencha seu email e veja todas as novidades dos profissionais da sua área'}
        />
       
-      <UserInformation/>
+      <UserInformation
+        name={'Evandro Oliveira'}
+        picture={'https://github.com/vandodev.png'}
+        rating={4}
+        description={'Morro Agudo'}
+      />
 
     </div>
   )

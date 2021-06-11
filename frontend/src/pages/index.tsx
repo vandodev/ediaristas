@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import SafeEnviroment from 'ui/components/feedback/SafeEnviroment/SafeEnviroment';
 import PageTitle from 'ui/components/data-display/PageTitle/PageTitle';
+import UserInformation from 'ui/components/data-display/UserInformation/UserInformation';
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
        subtitle={'Preencha seu email e veja todas as novidades dos profissionais da sua área'}
        />
       
+      <UserInformation/>
+
     </div>
   )
 }
